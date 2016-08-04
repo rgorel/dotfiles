@@ -1,0 +1,13 @@
+#!/bin/bash
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+bk_dir=$dir.bk
+rm -rf $bk_dir
+mkdir $bk_dir
+
+while read file
+do
+  echo "backing up .$file"
+  mv ~/.$file $dir.bk
+  echo "installing new .$file"
+  ln -s $dir/$file ~/.$file
+done < $dir/files 
