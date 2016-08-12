@@ -34,7 +34,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 map <C-P> :FZF<CR>
-map <C-O> :Buffers<CR>
+map <Leader>\ :Buffers<CR>
 map <C-C> :Commands<CR>
 map <C-H> :History<CR>
 map <Leader>[ :bp<CR>
