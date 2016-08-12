@@ -27,7 +27,15 @@ set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
 set list
 set list listchars=tab:»\ ,trail:⋅,extends:>
+set hidden
 
 source ~/.vim/Plugfile.vim
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+map <C-P> :FZF<CR>
+map <C-O> :Buffers<CR>
+map <C-C> :Commands<CR>
+map <C-H> :History<CR>
+map <Leader>[ :bp<CR>
+map <Leader>] :bn<CR>
