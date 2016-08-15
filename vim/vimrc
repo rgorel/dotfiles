@@ -36,6 +36,6 @@ let g:airline_powerline_fonts = 1
 map <C-P> :FZF<CR>
 map <Leader>\ :Buffers<CR>
 map <C-C> :Commands<CR>
-map <C-H> :History<CR>
+map <C-\> :History<CR>
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
