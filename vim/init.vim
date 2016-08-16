@@ -1,1 +1,1 @@
-/Users/gorerom/dotfiles/vim/vimrc
+source vimrc

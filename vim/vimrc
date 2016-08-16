@@ -9,7 +9,10 @@ set backspace=indent,eol,start
 set complete-=i
 set smarttab
 
-set clipboard=unnamed
+set swapfile
+set dir=/tmp
+
+set clipboard=unnamedplus
 set incsearch
 set showmatch
 set hlsearch
