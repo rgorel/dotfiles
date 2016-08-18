@@ -20,3 +20,5 @@ ln -s $dir/vim ~/.vim
 backup config/nvim
 echo 'linking neovim config'
 ln -s $dir/vim ~/.config/nvim
+echo 'linking zsh theme'
+ln -fs $dir/oh-my-zsh/custom/themes/* ~/.oh-my-zsh/custom/themes
