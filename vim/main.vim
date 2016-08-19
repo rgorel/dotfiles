@@ -33,6 +33,8 @@ set list
 set list listchars=tab:»\ ,trail:⋅,extends:>
 set hidden
 
+set tags=tags,.git/tags,.tags
+
 source ~/.vim/Plugfile.vim
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -41,5 +43,6 @@ map <C-P> :FZF<CR>
 map <Leader>\ :Buffers<CR>
 map <C-C> :Commands<CR>
 map <C-\> :History<CR>
+map <Leader>t :Tags<CR>
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
