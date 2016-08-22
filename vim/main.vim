@@ -5,6 +5,8 @@ if has('syntax')
 endif
 
 set autoindent
+filetype on
+filetype plugin indent on
 set backspace=indent,eol,start
 set complete-=i
 set smarttab
