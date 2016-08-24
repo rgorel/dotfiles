@@ -7,4 +7,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug 'vimtaku/hl_matchit.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'indentLine.vim'
 call plug#end()
