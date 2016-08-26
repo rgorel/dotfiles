@@ -8,5 +8,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug 'vimtaku/hl_matchit.vim'
 Plug 'derekwyatt/vim-scala'
-Plug 'indentLine.vim'
+"Plug 'indentLine.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'tpope/vim-vinegar'
 call plug#end()
