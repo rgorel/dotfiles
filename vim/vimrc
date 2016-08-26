@@ -1,3 +1,4 @@
 let $VIMHOME = $HOME."/.vim"
 
 source $VIMHOME/main.vim
+set shortmess+=c
