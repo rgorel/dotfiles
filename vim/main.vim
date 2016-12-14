@@ -35,13 +35,14 @@ set timeoutlen=1000 ttimeoutlen=0
 set list
 set list listchars=tab:»\ ,trail:⋅,extends:>
 set hidden
+set t_ut=
 
 set tags=tags,.git/tags,.tags
 
 source ~/.vim/Plugfile.vim
 let g:hl_matchit_hl_groupname = 'MatchParen'
 let g:hl_matchit_enable_on_vim_startup = 1
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 map <C-P> :FZF<CR>
