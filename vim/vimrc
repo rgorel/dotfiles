@@ -1,5 +1,3 @@
 let $VIMHOME = $HOME."/.vim"
 
 source $VIMHOME/main.vim
-set list listchars=tab:»\ ,space:⋅,trail:⋅,extends:>
-set shortmess+=c

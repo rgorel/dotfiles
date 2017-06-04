@@ -9,6 +9,8 @@ Plug 'tpope/vim-endwise'
 Plug 'vimtaku/hl_matchit.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'tpope/vim-vinegar'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

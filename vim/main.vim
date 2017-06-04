@@ -33,7 +33,8 @@ set wildmenu
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
 set list
-set list listchars=tab:»\ ,trail:⋅,extends:>
+set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set showbreak=↪
 set hidden
 set t_ut=
 
@@ -44,6 +45,12 @@ let g:hl_matchit_hl_groupname = 'MatchParen'
 let g:hl_matchit_enable_on_vim_startup = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+"let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=2
+let g:indent_guides_auto_colors = 0
+hi IndentGuidesOdd  ctermbg=234 ctermfg=238
+hi IndentGuidesEven ctermbg=237 ctermfg=232
 
 map <C-P> :FZF<CR>
 map <Leader>\ :Buffers<CR>
