@@ -1,3 +1,6 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "oh-my-zsh/custom/pure"]
+	path = oh-my-zsh/custom/pure
+	url = git@github.com:rgorel/pure.git

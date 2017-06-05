@@ -1,16 +1,16 @@
 #!/bin/bash
 
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-bk_dir=$dir.bk
+bk_dir=$dir.bk$(date +%Y%m%d-%H%M%S)
 
-rm -rf $bk_dir
 mkdir -p $bk_dir
 
 function backup {
   if [ -e ~/.$1 ]
   then
     echo "backing up .$1"
-    mv ~/.$1 $dir.bk/$(dirname $1)
+    mkdir -p $bk_dir/$(dirname $1)
+    mv ~/.$1 $bk_dir/$(dirname $1)
   fi
 }
 
@@ -24,4 +24,11 @@ echo 'linking zsh theme'
 ln -fs $dir/oh-my-zsh/custom/themes/* ~/.oh-my-zsh/custom/themes
 backup tmux.conf
 echo 'linking tmux config'
-ln -s $dir/tmux.conf ~/.tmux.conf
+ln -fs $dir/tmux.conf ~/.tmux.conf
+
+backup zshrc
+echo 'linking zshrc'
+ln -fs $dir/zshrc ~/.zshrc
+backup oh-my-zsh/custom/pure
+echo 'linking zsh customized pure theme'
+ln -fs $dir/oh-my-zsh/custom/pure ~/.oh-my-zsh/custom/pure
