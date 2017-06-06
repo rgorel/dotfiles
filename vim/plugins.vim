@@ -16,6 +16,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sleuth'
 "Plug 'ciaranm/detectindent'
+Plug 'scrooloose/nerdtree'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
