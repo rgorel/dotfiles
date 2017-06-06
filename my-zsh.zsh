@@ -12,6 +12,8 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+export PATH="$HOME/.rbenv/bin:$HOME/bin:$PATH"
+
 alias b=bundle
 alias be='bundle exec'
 alias emacs="emacs -nw"
