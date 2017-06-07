@@ -32,3 +32,6 @@ ln -fs $dir/zshrc ~/.zshrc
 backup oh-my-zsh/custom/pure
 echo 'linking zsh customized pure theme'
 ln -fs $dir/oh-my-zsh/custom/pure ~/.oh-my-zsh/custom/pure
+mkdir -p ~/.oh-my-zsh/functions
+ln -fs $dir/oh-my-zsh/custom/pure/pure.zsh ~/.oh-my-zsh/functions/prompt_pure_setup
+ln -fs $dir/oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/functions/async

@@ -12,17 +12,27 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-export PATH="$HOME/.rbenv/bin:$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+if [[ -d $HOME/.rbenv ]]
+then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 alias b=bundle
 alias be='bundle exec'
 alias emacs="emacs -nw"
+alias gcof='gco `gb|fzf`'
+
 export CLICOLOR=1
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-eval "$(rbenv init -)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 autoload -U promptinit; promptinit
 prompt pure
 unsetopt nomatch
+
+[[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+export DISABLE_AUTO_TITLE=true
