@@ -17,6 +17,8 @@ Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sleuth'
 "Plug 'ciaranm/detectindent'
 Plug 'scrooloose/nerdtree'
+"Plug 'christoomey/vim-tmux-runner'
+Plug 'jgdavey/tslime.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

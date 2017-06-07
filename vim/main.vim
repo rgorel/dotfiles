@@ -55,6 +55,8 @@ let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd  ctermbg=234 ctermfg=238
 hi IndentGuidesEven ctermbg=237 ctermfg=232
 let g:tagbar_sort=0
+ let g:tslime_always_current_session = 1
+ let g:tslime_always_current_window = 1
 
 source ~/.vim/keys.vim
 source ~/.vim/commands.vim
