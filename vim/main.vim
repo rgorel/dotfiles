@@ -15,7 +15,7 @@ set smarttab
 set swapfile
 set dir=/tmp
 
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 set incsearch
 set showmatch
