@@ -34,4 +34,4 @@ map <Leader>f :NERDTree<CR>
 map <Leader>ff :NERDTreeFind<CR>
 
 " tmux runner
-map <Leader>r :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
+map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
