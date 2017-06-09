@@ -17,9 +17,7 @@ set dir=/tmp
 
 if has('unnamedplus')
   set clipboard=unnamedplus
-endif
-
-if has('unnamed')
+else
   set clipboard=unnamed
 endif
 
@@ -35,6 +33,7 @@ set relativenumber
 set number
 colorscheme Tomorrow-Night-Eighties
 hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
+hi Visual ctermbg=58
 set cursorline
 set wildmenu
 set laststatus=2
@@ -53,7 +52,7 @@ set updatetime=250
  set ttimeoutlen=0
  set regexpengine=1
 
-set tags=tags,.git/tags,.tags
+set tags=.tags,tags,.git/tags
 
 
 " plugins settings
@@ -67,7 +66,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
-"let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level=1
 let g:indent_guides_guide_size=2
 let g:indent_guides_auto_colors = 0

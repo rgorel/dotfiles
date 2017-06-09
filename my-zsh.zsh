@@ -33,6 +33,7 @@ export LC_ALL=en_US.UTF-8
 autoload -U promptinit; promptinit
 prompt pure
 unsetopt nomatch
+setopt nosharehistory
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 export DISABLE_AUTO_TITLE=true
