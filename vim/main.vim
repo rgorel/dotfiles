@@ -78,6 +78,8 @@ let g:tagbar_sort=0
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
+let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
+
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
