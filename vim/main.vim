@@ -34,7 +34,7 @@ set number
 colorscheme Tomorrow-Night-Eighties
 hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
 hi Visual ctermbg=58
-set cursorline
+"set cursorline
 set wildmenu
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
@@ -89,3 +89,4 @@ endif
 
 source ~/.vim/keys.vim
 source ~/.vim/commands.vim
+runtime macros/matchit.vim
