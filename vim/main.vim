@@ -78,6 +78,9 @@ let g:tagbar_sort=0
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
+let g:neocomplete#enable_auto_select = 0
+let g:neocomplete#disable_auto_complete = 1
+
 let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
 
 if executable('ag')
