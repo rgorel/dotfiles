@@ -22,6 +22,9 @@ Plug 'mileszs/ack.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kchmck/vim-coffee-script'
+Plug 'joker1007/vim-ruby-heredoc-syntax'
+Plug 'shmup/vim-sql-syntax'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
