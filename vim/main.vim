@@ -43,6 +43,7 @@ set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 set showbreak=↪
 set hidden
 set updatetime=250
+set nowrap
 
 " Speed up vim
  set ttyfast
