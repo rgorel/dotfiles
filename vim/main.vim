@@ -45,13 +45,16 @@ set hidden
 set updatetime=250
 set nowrap
 
+set splitbelow
+set splitright
+
 " Speed up vim
- set ttyfast
- set lazyredraw
- set synmaxcol=150
- set timeoutlen=1000
- set ttimeoutlen=0
- set regexpengine=1
+set ttyfast
+set lazyredraw
+set synmaxcol=150
+set timeoutlen=1000
+set ttimeoutlen=0
+set regexpengine=1
 
 set tags=.tags,tags,.git/tags
 
