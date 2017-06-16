@@ -89,6 +89,7 @@ let g:neocomplete#disable_auto_complete = 1
 let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
 
 let g:startify_list_order = ['dir', 'files', 'bookmarks', 'sessions', 'commands']
+let g:startify_change_to_dir = 0
 
 
 if executable('ag')
