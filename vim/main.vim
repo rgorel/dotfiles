@@ -68,6 +68,7 @@ let g:hl_matchit_enable_on_vim_startup = 1
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline#extensions#tagbar#enabled = 0
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level=1
@@ -86,6 +87,9 @@ let g:neocomplete#enable_auto_select = 0
 let g:neocomplete#disable_auto_complete = 1
 
 let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
+
+let g:startify_list_order = ['dir', 'files', 'bookmarks', 'sessions', 'commands']
+
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'

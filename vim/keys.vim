@@ -34,7 +34,8 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " NERDTree
 map <Leader>f :NERDTreeToggle<CR>
-map <Leader>ff :NERDTreeFind<CR>
+map <Leader>g :NERDTreeFind<CR>
+let NERDTreeMapHelp = '<Leader>?'
 
 " tmux runner
 map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
