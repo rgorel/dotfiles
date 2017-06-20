@@ -23,6 +23,7 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'kchmck/vim-coffee-script'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-startify'
+Plug 'junegunn/seoul256.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

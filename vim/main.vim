@@ -31,8 +31,8 @@ set shiftwidth=2
 set expandtab
 set relativenumber
 set number
-colorscheme Tomorrow-Night-Eighties
-hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
+"colorscheme Tomorrow-Night-Eighties
+"hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
 hi Visual ctermbg=58
 "set cursorline
 set wildmenu
@@ -60,6 +60,10 @@ set tags=.tags,tags,.git/tags
 
 " plugins settings
 source ~/.vim/plugins.vim
+set background=dark
+
+let g:seoul256_background = 235
+colorscheme seoul256
 
 let g:hl_matchit_hl_groupname = 'MatchParen'
 let g:hl_matchit_enable_on_vim_startup = 1
