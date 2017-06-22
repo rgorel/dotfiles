@@ -1,5 +1,6 @@
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
+nmap <Leader>w :b #\|bw # <CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 

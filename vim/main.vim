@@ -50,7 +50,7 @@ set splitright
 " Speed up vim
 set ttyfast
 set lazyredraw
-set synmaxcol=150
+"set synmaxcol=150
 set timeoutlen=1000
 set ttimeoutlen=0
 set regexpengine=1
