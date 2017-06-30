@@ -7,7 +7,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug 'derekwyatt/vim-scala'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'kana/vim-textobj-user'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'majutsushi/tagbar'
@@ -24,6 +23,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/seoul256.vim'
+Plug 'thaerkh/vim-indentguides'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
