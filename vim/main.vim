@@ -4,6 +4,8 @@ if has('syntax')
   syntax enable
 endif
 
+autocmd BufNewFile,BufRead *.eye   set syntax=ruby
+
 set autoindent
 filetype on
 filetype plugin on
