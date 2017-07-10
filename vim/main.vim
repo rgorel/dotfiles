@@ -38,6 +38,8 @@ set number
 "hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
 hi Visual ctermbg=58
 "set cursorline
+:autocmd InsertEnter * set cursorline
+:autocmd InsertLeave * set nocursorline
 set wildmenu
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
