@@ -34,8 +34,9 @@ smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " NERDTree
-map <Leader>f :NERDTreeToggle<CR>
+map <Leader>d :NERDTreeToggle<CR>
 map <Leader>g :NERDTreeFind<CR>
+map <Leader>f :NERDTreeFocus<CR>
 let NERDTreeMapHelp = '<Leader>?'
 
 " tmux runner
