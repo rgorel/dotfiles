@@ -24,6 +24,7 @@ alias b=bundle
 alias be='bundle exec'
 alias emacs="emacs -nw"
 alias gcof='gco `gb|fzf`'
+alias glo="git log --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 
 export CLICOLOR=1
 export LC_CTYPE=en_US.UTF-8
