@@ -41,3 +41,4 @@ let NERDTreeMapHelp = '<Leader>?'
 
 " tmux runner
 map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
+nmap <C-c>r <Plug>SetTmuxVars

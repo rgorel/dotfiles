@@ -60,6 +60,7 @@ set lazyredraw
 set timeoutlen=1000
 set ttimeoutlen=0
 set regexpengine=1
+set ruler
 
 set tags=.tags,tags,.git/tags
 
