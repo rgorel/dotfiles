@@ -1,6 +1,6 @@
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
-nmap <Leader>w :b #\|bw # <CR>
+nmap <Leader>w :Startify\|bw # <CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
@@ -42,3 +42,5 @@ let NERDTreeMapHelp = '<Leader>?'
 " tmux runner
 map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
 nmap <C-c>r <Plug>SetTmuxVars
+
+nmap <Leader>a :Ack! 
