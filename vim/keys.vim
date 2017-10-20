@@ -4,11 +4,15 @@ nmap <Leader>w :Startify\|bw # <CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
+nmap <Leader>n :set relativenumber! relativenumber?<CR>
+
 " woo! dangerous stuff!
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+map <Leader>b :Tagbar<CR>
 
 " FZF
 map <C-P> :FZF<CR>
@@ -16,10 +20,16 @@ map <Leader>\ :Buffers<CR>
 map <C-C> :Commands<CR>
 map <C-\> :History<CR>
 map <Leader>t :Tags<CR>
-map <Leader>b :Tagbar<CR>
 map <Leader>r :BTags<CR>
 map <Leader>m :Marks<CR>
 map <Leader>; :History:<CR>
+
+" Ctrl P
+"map <Leader>\ :CtrlPBuffer<CR>
+"map <C-\> :CtrlPMRU<CR>
+"map <Leader>t :CtrlPTag<CR>
+"map <Leader>r :CtrlPBufTag<CR>
+"map <Leader>s :CtrlPSession<CR>
 
 " neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : neocomplete#start_manual_complete()

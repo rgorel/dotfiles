@@ -28,6 +28,7 @@ set incsearch
 set showmatch
 set hlsearch
 set ignorecase
+set exrc
 
 set tabstop=2
 set shiftwidth=2
@@ -40,6 +41,7 @@ hi Visual ctermbg=58
 "set cursorline
 :autocmd InsertEnter * set cursorline
 :autocmd InsertLeave * set nocursorline
+
 set wildmenu
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
@@ -68,6 +70,49 @@ set tags=.tags,tags,.git/tags
 " plugins settings
 source ~/.vim/plugins.vim
 set background=dark
+set noballooneval
+
+"let g:fzf_launcher = 'xterm -e sh -ic %s'
+let g:fzf_colors = { 'bg':      ['bg', 'Normal'], 'prompt':      ['fg', 'Conditional']}
+"let g:fzf_colors =
+"\ { 'fg':      ['fg', 'Normal'],
+"  \ 'bg':      ['bg', 'Normal'],
+"  \ 'hl':      ['fg', 'Comment'],
+"  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+"  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+"  \ 'hl+':     ['fg', 'Statement'],
+"  \ 'info':    ['fg', 'PreProc'],
+"  \ 'border':  ['fg', 'Ignore'],
+"  \ 'prompt':  ['fg', 'Conditional'],
+"  \ 'pointer': ['fg', 'Exception'],
+"  \ 'marker':  ['fg', 'Keyword'],
+"  \ 'spinner': ['fg', 'Label'],
+"  \ 'header':  ['fg', 'Comment'] }
+
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+"  let g:ctrlp_user_command = 'ag %s -l -i -U --nocolor --nogroup --hidden
+"    \ --ignore="bin/"
+"    \ --ignore="*.gif"
+"    \ --ignore="*.png"
+"    \ --ignore="*.jpg"
+"    \ --ignore="*.jpeg"
+"    \ --ignore="vendor/bundle"
+"    \ --ignore="tmp/"
+"    \ --ignore="coverage/"
+"    \ --ignore=".git/"
+"    \ --ignore="._gems/"
+"    \ --ignore="._bundle/"
+"    \ --ignore=".DS_Store/"
+"    \ -g ""'
+"
+"  " ag is fast enough that CtrlP doesn't need to cache
+"  let g:ctrlp_use_caching = 0
+endif
 
 let g:seoul256_background = 235
 colorscheme seoul256
@@ -84,8 +129,8 @@ let g:airline#extensions#tagbar#enabled = 0
 
 let g:tagbar_sort=0
 
-let g:tslime_always_current_session = 1
-let g:tslime_always_current_window = 1
+"let g:tslime_always_current_session = 1
+"let g:tslime_always_current_window = 1
 
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_auto_select = 1
