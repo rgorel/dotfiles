@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+chosen_window=$(tmux list-windows -a -F '#S:#I #W' | fzf-tmux | awk '{print $1}')
+tmux switch-client -t $chosen_window

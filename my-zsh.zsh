@@ -12,7 +12,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/dotfiles/bin:$PATH"
 
 if [[ -d $HOME/.rbenv ]]
 then

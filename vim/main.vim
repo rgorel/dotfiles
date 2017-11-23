@@ -64,6 +64,9 @@ set ttimeoutlen=0
 set regexpengine=1
 set ruler
 
+set foldmethod=indent
+set nofoldenable
+
 set tags=.tags,tags,.git/tags
 
 
