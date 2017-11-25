@@ -33,7 +33,6 @@ export LC_ALL=en_US.UTF-8
 
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 autoload -U promptinit; promptinit
-prompt pure
 unsetopt nomatch
 setopt nosharehistory
 
