@@ -16,7 +16,7 @@ set smarttab
 set mouse=a
 
 set swapfile
-set dir=/tmp
+set dir^=$VIMHOME/tmp//
 
 if has('unnamedplus')
   set clipboard=unnamedplus
