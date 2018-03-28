@@ -4,6 +4,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'slim-template/vim-slim'
 "Plug 'vim-airline/vim-airline'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/fzf', { 'dir': '~/dotfiles/fzf', 'do': './install --all' }
@@ -30,7 +31,8 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/seoul256.vim'
-Plug 'thaerkh/vim-indentguides'
+Plug 'rorymckinley/vim-rubyhash'
+"Plug 'thaerkh/vim-indentguides'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

@@ -117,6 +117,7 @@ if executable('ag')
 "  let g:ctrlp_use_caching = 0
 endif
 
+let g:rubyhash_map_keys=0
 let g:seoul256_background = 235
 colorscheme seoul256
 highlight ExtraWhitespace ctermbg=red

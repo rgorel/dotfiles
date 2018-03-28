@@ -26,6 +26,7 @@ alias emacs="emacs -nw"
 alias gcof='gco `gb|fzf`'
 alias glo="git log --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias markdown-watch=vmd
+alias dc="docker-compose"
 
 export CLICOLOR=1
 export LC_CTYPE=en_US.UTF-8
