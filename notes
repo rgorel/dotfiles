@@ -1,0 +1,18 @@
+ubuntu packages: ncurses xorg-dev liblua-dev xclip libevent2 python3-dev python3-pip
+tmux (2.6)
+vim8
+rbenv
+ruby-build
+ag
+fzf?
+
+vim install:
+sudo ln -s /usr/include/lua5.2 /usr/include/lua
+sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.2.so /usr/local/lib/liblua.so
+pip3 install neovim
+
+cd src
+make distclean
+./configure --with-features=huge --with-x --enable-luainterp=yes --enable-rubyinterp=yes --enable-python3interp=yes --enable-gui=auto --prefix=/usr
+make
+sudo checkinstall --pkgname=vim8 --provides=vim
