@@ -31,11 +31,11 @@ map <Leader>; :History:<CR>
 "map <Leader>r :CtrlPBufTag<CR>
 "map <Leader>s :CtrlPSession<CR>
 
-" neocomplete
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : neocomplete#start_manual_complete()
+" deoplete
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : deoplete#manual_complete()
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return pumvisible() ? neocomplete#close_popup() : "\<CR>"
+  return pumvisible() ? deoplete#close_popup() : "\<CR>"
 endfunction
 
 " neosnippet
