@@ -33,14 +33,15 @@ Plug 'mhinz/vim-startify'
 Plug 'junegunn/seoul256.vim'
 Plug 'rorymckinley/vim-rubyhash'
 "Plug 'thaerkh/vim-indentguides'
+Plug 'ervandew/supertab'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'fishbullet/deoplete-ruby'
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"  Plug 'fishbullet/deoplete-ruby'
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"endif
 
 call plug#end()

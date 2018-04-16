@@ -14,6 +14,11 @@ set backspace=indent,eol,start
 set complete-=i
 set smarttab
 set mouse=a
+set completeopt=menu,menuone,preview,longest
+set smartcase
+set ignorecase
+au InsertEnter * set noignorecase
+au InsertLeave * set ignorecase
 
 set swapfile
 set dir^=$VIMHOME/tmp//
@@ -27,7 +32,6 @@ endif
 set incsearch
 set showmatch
 set hlsearch
-set ignorecase
 set exrc
 
 set tabstop=2
@@ -136,11 +140,12 @@ let g:tagbar_sort=0
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
-let g:deoplete#enable_at_startup = 1
-"let g:neocomplete#enable_auto_select = 1
-let g:deoplete#disable_auto_complete = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#enable_refresh_always = 1
+let g:SuperTabLongestEnhanced = 1
+"let g:deoplete#enable_at_startup = 1
+""let g:neocomplete#enable_auto_select = 1
+"let g:deoplete#disable_auto_complete = 1
+"let g:deoplete#enable_smart_case = 1
+"let g:deoplete#enable_refresh_always = 1
 
 let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
 

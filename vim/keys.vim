@@ -32,11 +32,11 @@ map <Leader>; :History:<CR>
 "map <Leader>s :CtrlPSession<CR>
 
 " deoplete
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : deoplete#manual_complete()
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return pumvisible() ? deoplete#close_popup() : "\<CR>"
-endfunction
+"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : deoplete#manual_complete()
+"inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+"function! s:my_cr_function()
+"  return pumvisible() ? deoplete#close_popup() : "\<CR>"
+"endfunction
 
 " neosnippet
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)

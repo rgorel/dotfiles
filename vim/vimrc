@@ -1,4 +1,3 @@
 let $VIMHOME = $HOME."/.vim"
 
 source $VIMHOME/main.vim
-let g:neocomplete#enable_at_startup = 1
