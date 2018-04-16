@@ -141,6 +141,7 @@ let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
 let g:SuperTabLongestEnhanced = 1
+let g:SuperTabLongestHighlight = 1
 "let g:deoplete#enable_at_startup = 1
 ""let g:neocomplete#enable_auto_select = 1
 "let g:deoplete#disable_auto_complete = 1
