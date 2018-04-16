@@ -53,4 +53,7 @@ let NERDTreeMapHelp = '<Leader>?'
 map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
 nmap <C-c>r <Plug>SetTmuxVars
 
+" ack
 nmap <Leader>a :Ack! 
+vmap <Leader>a "ay:Ack! -Q <C-r>=fnameescape(@a)<CR>
+nmap <Leader>A :Ack! -Q <C-r>=expand('<cword>')<CR>
