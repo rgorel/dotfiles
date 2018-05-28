@@ -23,6 +23,7 @@ map <Leader>t :Tags<CR>
 map <Leader>r :BTags<CR>
 map <Leader>m :Marks<CR>
 map <Leader>; :History:<CR>
+map <Leader>l :BLines<CR>
 
 " Ctrl P
 "map <Leader>\ :CtrlPBuffer<CR>
