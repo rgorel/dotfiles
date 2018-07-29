@@ -1,6 +1,8 @@
+map <space> <Leader>
+
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
-nmap <Leader>w :Startify\|bw # <CR>
+nmap <Leader>w :set wrap!<CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
@@ -17,6 +19,7 @@ map <Leader>b :Tagbar<CR>
 " FZF
 map <C-P> :FZF<CR>
 map <Leader>\ :Buffers<CR>
+map <Leader><space> :Buffers<CR>
 map <C-C> :Commands<CR>
 map <C-\> :History<CR>
 map <Leader>t :Tags<CR>

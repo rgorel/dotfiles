@@ -5,6 +5,9 @@ if has('syntax')
 endif
 
 autocmd BufNewFile,BufRead *.eye   set syntax=ruby
+" go to last cursor position when switching to buffer
+au BufLeave * let b:winview = winsaveview()
+au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 
 set autoindent
 filetype on
@@ -55,6 +58,7 @@ set showbreak=↪
 set hidden
 set updatetime=250
 set nowrap
+set linebreak
 
 set splitbelow
 set splitright
