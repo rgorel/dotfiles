@@ -34,6 +34,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'rorymckinley/vim-rubyhash'
 "Plug 'thaerkh/vim-indentguides'
 Plug 'ervandew/supertab'
+Plug 'junegunn/gv.vim'
 
 "if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

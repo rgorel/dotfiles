@@ -1,4 +1,6 @@
-map <space> <Leader>
+" Leader
+nmap <space> \
+vmap <space> \
 
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
