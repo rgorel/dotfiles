@@ -10,6 +10,9 @@ nnoremap <esc>^[ <esc>^[
 
 nmap <Leader>n :set relativenumber! relativenumber?<CR>
 
+map <Leader>c :CopyFileName<CR>
+map <Leader>C :CopyFullFileName<CR>
+
 " woo! dangerous stuff!
 noremap <Up> <NOP>
 noremap <Down> <NOP>
