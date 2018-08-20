@@ -12,13 +12,15 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-export PATH="$HOME/bin:$HOME/dotfiles/bin:$PATH"
+[ "$PATH_LOADED" != 1 ] && export PATH="$HOME/bin:$HOME/dotfiles/bin:$PATH"
 
 if [[ -d $HOME/.rbenv ]]
 then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+  [ "$PATH_LOADED" != 1 ] && export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+
+export PATH_LOADED=1
 
 alias b=bundle
 alias be='bundle exec'
