@@ -34,7 +34,7 @@ export CLICOLOR=1
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export FZF_DEFAULT_COMMAND='ag -l'
+export FZF_DEFAULT_COMMAND='ag -lU'
 alias fzfa="ag -lU|fzf"
 
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

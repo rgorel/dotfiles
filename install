@@ -25,6 +25,8 @@ ln -fs $dir/oh-my-zsh/custom/themes/* ~/.oh-my-zsh/custom/themes
 backup tmux.conf
 echo 'linking tmux config'
 ln -fs $dir/tmux.conf ~/.tmux.conf
+echo 'linking agignore'
+ln -fs $dir/agignore ~/.agignore
 
 backup zshrc
 echo 'linking zshrc'
