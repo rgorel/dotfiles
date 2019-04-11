@@ -10,6 +10,9 @@ nnoremap <esc>^[ <esc>^[
 
 nmap <Leader>n :set relativenumber! relativenumber?<CR>
 
+nmap <Leader>p :norm p=`]<CR>
+nmap <Leader>P :norm P=`]<CR>
+
 map <Leader>c :CopyFileName<CR>
 map <Leader>C :CopyFullFileName<CR>
 
@@ -32,6 +35,7 @@ map <Leader>r :BTags<CR>
 map <Leader>m :Marks<CR>
 map <Leader>; :History:<CR>
 map <Leader>l :BLines<CR>
+map <leader>j :call fzf#vim#tags("'".expand('<cword>'))<cr>
 
 " Ctrl P
 "map <Leader>\ :CtrlPBuffer<CR>
@@ -59,7 +63,7 @@ map <Leader>f :NERDTreeFocus<CR>
 let NERDTreeMapHelp = '<Leader>?'
 
 " tmux runner
-map <Leader>e :call SendToTmux('rspec ' . expand('%') . "\n")<CR>
+map <Leader>e :call SendToTmux('bundle exec rspec ' . expand('%') . "\n")<CR>
 nmap <C-c>r <Plug>SetTmuxVars
 
 " ack

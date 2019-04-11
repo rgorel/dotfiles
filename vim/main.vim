@@ -126,7 +126,7 @@ if executable('ag')
 endif
 
 let g:rubyhash_map_keys=0
-let g:seoul256_background = 235
+let g:seoul256_background = 236
 colorscheme seoul256
 highlight ExtraWhitespace ctermbg=red
 
