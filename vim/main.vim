@@ -10,8 +10,6 @@ au BufLeave * let b:winview = winsaveview()
 au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 
 set autoindent
-filetype on
-filetype plugin on
 filetype plugin indent on
 set backspace=indent,eol,start
 set complete-=i
@@ -125,7 +123,6 @@ if executable('ag')
 "  let g:ctrlp_use_caching = 0
 endif
 
-let g:rubyhash_map_keys=0
 let g:seoul256_background = 236
 colorscheme seoul256
 highlight ExtraWhitespace ctermbg=red
@@ -133,30 +130,17 @@ highlight ExtraWhitespace ctermbg=red
 let g:hl_matchit_hl_groupname = 'MatchParen'
 let g:hl_matchit_enable_on_vim_startup = 1
 
-"let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#tagbar#enabled = 0
-
-let g:tagbar_sort=0
-
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
 let g:SuperTabLongestEnhanced = 1
 let g:SuperTabLongestHighlight = 1
-"let g:deoplete#enable_at_startup = 1
-""let g:neocomplete#enable_auto_select = 1
-"let g:deoplete#disable_auto_complete = 1
-"let g:deoplete#enable_smart_case = 1
-"let g:deoplete#enable_refresh_always = 1
-
 let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
 
 let g:startify_list_order = ['dir', 'files', 'bookmarks', 'sessions', 'commands']
 let g:startify_change_to_dir = 0
 
+let g:indent_guides_enable_on_vim_startup = 1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
