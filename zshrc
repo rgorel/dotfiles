@@ -1,5 +1,5 @@
 #START=$(gdate +%s.%N)
-export TERM='screen-256color'
+export TERM='xterm-256color'
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME=roman
 plugins=(git zsh-completions)
