@@ -47,6 +47,7 @@ hi Visual ctermbg=58
 :autocmd InsertEnter * set cursorline
 :autocmd InsertLeave * set nocursorline
 
+
 set wildmenu
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
@@ -145,6 +146,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+let g:togglecursor_default = 'block'
+let g:togglecursor_insert = 'line'
 
 source ~/.vim/keys.vim
 source ~/.vim/commands.vim

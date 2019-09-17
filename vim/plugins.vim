@@ -5,7 +5,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'slim-template/vim-slim'
-"Plug 'vim-airline/vim-airline'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/fzf', { 'dir': '~/dotfiles/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -32,6 +31,8 @@ Plug 'junegunn/seoul256.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ervandew/supertab'
 Plug 'junegunn/gv.vim'
+Plug 'jszakmeister/vim-togglecursor'
+Plug 'valloric/python-indent'
 
 "if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
