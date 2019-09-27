@@ -40,6 +40,9 @@ set shiftwidth=2
 set expandtab
 set relativenumber
 set number
+
+set colorcolumn=120
+
 "colorscheme Tomorrow-Night-Eighties
 "hi CursorLineNr   term=bold ctermfg=11 gui=bold guifg=Yellow
 hi Visual ctermbg=58
