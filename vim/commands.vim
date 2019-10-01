@@ -5,3 +5,5 @@
 
 :command! Rhtosym :call To19KeysLinewise()
 :command! Rhtostr :call ToStringKeysLinewise()
+
+:command! FormatJson :%!python -m json.tool
