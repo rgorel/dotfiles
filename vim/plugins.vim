@@ -32,7 +32,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ervandew/supertab'
 Plug 'junegunn/gv.vim'
 Plug 'jszakmeister/vim-togglecursor'
-Plug 'valloric/python-indent'
 
 "if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
