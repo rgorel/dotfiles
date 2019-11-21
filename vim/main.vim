@@ -22,7 +22,8 @@ au InsertEnter * set noignorecase
 au InsertLeave * set ignorecase
 
 set swapfile
-set dir^=$VIMHOME/tmp//
+exec system('mkdir -p /tmp/vim')
+set dir^=/tmp/vim//
 
 if has('unnamedplus')
   set clipboard=unnamedplus
