@@ -154,6 +154,8 @@ endif
 let g:togglecursor_default = 'block'
 let g:togglecursor_insert = 'line'
 
+let g:user_emmet_leader_key='<C-X>'
+
 source ~/.vim/keys.vim
 source ~/.vim/commands.vim
 runtime macros/matchit.vim
