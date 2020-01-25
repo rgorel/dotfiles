@@ -5,6 +5,8 @@ if has('syntax')
 endif
 
 autocmd BufNewFile,BufRead *.eye   set syntax=ruby
+au BufRead,BufNewFile *.sbt set filetype=scala
+autocmd FileType json syntax match Comment +\/\/.\+$+
 " go to last cursor position when switching to buffer
 au BufLeave * let b:winview = winsaveview()
 au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
@@ -80,56 +82,24 @@ set nofoldenable
 
 set tags=.tags,tags,.git/tags
 
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
 
 " plugins settings
 source ~/.vim/plugins.vim
+let g:seoul256_background = 236
+colorscheme seoul256
 set background=dark
-set noballooneval
 
 "let g:fzf_launcher = 'xterm -e sh -ic %s'
 let g:fzf_colors = { 'bg':      ['bg', 'Normal'], 'prompt':      ['fg', 'Conditional']}
-"let g:fzf_colors =
-"\ { 'fg':      ['fg', 'Normal'],
-"  \ 'bg':      ['bg', 'Normal'],
-"  \ 'hl':      ['fg', 'Comment'],
-"  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-"  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-"  \ 'hl+':     ['fg', 'Statement'],
-"  \ 'info':    ['fg', 'PreProc'],
-"  \ 'border':  ['fg', 'Ignore'],
-"  \ 'prompt':  ['fg', 'Conditional'],
-"  \ 'pointer': ['fg', 'Exception'],
-"  \ 'marker':  ['fg', 'Keyword'],
-"  \ 'spinner': ['fg', 'Label'],
-"  \ 'header':  ['fg', 'Comment'] }
 
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-"  let g:ctrlp_user_command = 'ag %s -l -i -U --nocolor --nogroup --hidden
-"    \ --ignore="bin/"
-"    \ --ignore="*.gif"
-"    \ --ignore="*.png"
-"    \ --ignore="*.jpg"
-"    \ --ignore="*.jpeg"
-"    \ --ignore="vendor/bundle"
-"    \ --ignore="tmp/"
-"    \ --ignore="coverage/"
-"    \ --ignore=".git/"
-"    \ --ignore="._gems/"
-"    \ --ignore="._bundle/"
-"    \ --ignore=".DS_Store/"
-"    \ -g ""'
-"
-"  " ag is fast enough that CtrlP doesn't need to cache
-"  let g:ctrlp_use_caching = 0
 endif
 
-let g:seoul256_background = 236
-colorscheme seoul256
 highlight ExtraWhitespace ctermbg=red
 
 let g:hl_matchit_hl_groupname = 'MatchParen'
@@ -155,6 +125,8 @@ let g:togglecursor_default = 'block'
 let g:togglecursor_insert = 'line'
 
 let g:user_emmet_leader_key='<C-X>'
+
+set statusline+=%{noscrollbar#statusline(10,'-','\|')}
 
 source ~/.vim/keys.vim
 source ~/.vim/commands.vim

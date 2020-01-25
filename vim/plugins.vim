@@ -9,7 +9,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/fzf', { 'dir': '~/dotfiles/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-ruby/vim-ruby'
+"Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug 'derekwyatt/vim-scala'
 Plug 'kana/vim-textobj-user'
@@ -29,10 +29,17 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/seoul256.vim'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ervandew/supertab'
 Plug 'junegunn/gv.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'mattn/emmet-vim'
+Plug 'gcavallanti/vim-noscrollbar'
+
+if has('nvim')
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  "Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+else
+  Plug 'ervandew/supertab'
+endif
 
 "if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
