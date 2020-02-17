@@ -34,8 +34,8 @@ export CLICOLOR=1
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export FZF_DEFAULT_COMMAND='ag -lU'
-alias fzfa="ag -lU|fzf"
+#export FZF_DEFAULT_COMMAND='ag -lU'
+whence -p fd > /dev/null && export FZF_DEFAULT_COMMAND='fd -t f --no-ignore-vcs --ignore-file=$HOME/.ignore'
 
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 autoload -U promptinit; promptinit
