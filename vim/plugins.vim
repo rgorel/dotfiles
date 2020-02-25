@@ -33,6 +33,7 @@ Plug 'junegunn/gv.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'mattn/emmet-vim'
 Plug 'gcavallanti/vim-noscrollbar'
+Plug 'tpope/vim-markdown'
 
 if has('nvim')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
