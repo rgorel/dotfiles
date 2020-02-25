@@ -7,3 +7,4 @@
 :command! Rhtostr :call ToStringKeysLinewise()
 
 :command! FormatJson :%!python -m json.tool
+:command! FormatSql %!sqlformat -i lower -k upper -
