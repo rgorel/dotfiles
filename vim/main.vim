@@ -59,7 +59,7 @@ set wildmode=longest:full,full
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
 set list
-set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set listchars=tab:-\|,eol:¬,trail:⋅,extends:❯,precedes:❮
 set showbreak=↪
 set hidden
 set updatetime=250
@@ -116,6 +116,8 @@ let g:neosnippet#snippets_directory = $VIMHOME . "/snippets"
 let g:startify_list_order = ['dir', 'files', 'bookmarks', 'sessions', 'commands']
 let g:startify_change_to_dir = 0
 
+let g:indent_guides_soft_pattern = ' '
+let g:indent_guides_tab_guides = 0
 let g:indent_guides_enable_on_vim_startup = 1
 
 if executable('ag')
