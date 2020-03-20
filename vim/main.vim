@@ -55,6 +55,7 @@ hi Visual ctermbg=58
 
 
 set wildmenu
+set wildmode=longest:full,full
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
 set list
