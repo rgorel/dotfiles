@@ -1,0 +1,6 @@
+.tags
+.DS_Store
+.pryrc
+.env.local
+project/metals.sbt
+_notes/
