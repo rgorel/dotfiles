@@ -99,6 +99,7 @@ let g:fzf_colors = { 'bg':      ['bg', 'Normal'], 'prompt':      ['fg', 'Conditi
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
+  let g:ackprg = 'ag --vimgrep'
 endif
 
 highlight ExtraWhitespace ctermbg=red
@@ -119,10 +120,6 @@ let g:startify_change_to_dir = 0
 let g:indent_guides_soft_pattern = ' '
 let g:indent_guides_tab_guides = 0
 let g:indent_guides_enable_on_vim_startup = 1
-
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
 
 let g:togglecursor_default = 'block'
 let g:togglecursor_insert = 'line'
