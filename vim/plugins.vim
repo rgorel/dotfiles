@@ -4,36 +4,38 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'slim-template/vim-slim'
-Plug 'ntpeters/vim-better-whitespace'
+"Plug 'slim-template/vim-slim'
+"Plug 'ntpeters/vim-better-whitespace' " slows down
 Plug 'junegunn/fzf', { 'dir': '~/dotfiles/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug 'derekwyatt/vim-scala'
 Plug 'kana/vim-textobj-user'
 Plug 'michaeljsmith/vim-indent-object'
+" auto tab size/mode
 Plug 'tpope/vim-sleuth'
 Plug 'scrooloose/nerdtree'
 Plug 'jgdavey/tslime.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'tpope/vim-rhubarb' " open files in github
 Plug 'mileszs/ack.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
-Plug 'nelstrom/vim-textobj-rubyblock'
+"Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'kchmck/vim-coffee-script'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/seoul256.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/gv.vim'
-Plug 'jszakmeister/vim-togglecursor'
+"Plug 'jszakmeister/vim-togglecursor' " slows down
 Plug 'mattn/emmet-vim'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'tpope/vim-markdown'
+Plug 'vim-ruby/vim-ruby'
 
 if has('nvim')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}

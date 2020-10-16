@@ -75,7 +75,7 @@ set lazyredraw
 "set synmaxcol=150
 set timeoutlen=1000
 set ttimeoutlen=0
-set regexpengine=1
+set regexpengine=0
 set ruler
 
 set foldmethod=indent
@@ -102,7 +102,10 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-highlight ExtraWhitespace ctermbg=red
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 let g:hl_matchit_hl_groupname = 'MatchParen'
 let g:hl_matchit_enable_on_vim_startup = 1
