@@ -95,8 +95,10 @@ set background=dark
 "let g:fzf_launcher = 'xterm -e sh -ic %s'
 let g:fzf_colors = { 'bg':      ['bg', 'Normal'], 'prompt':      ['fg', 'Conditional']}
 
-" The Silver Searcher
-if executable('ag')
+if executable('rg')
+  set grepprg=rg\ --nogroup\ --nocolor
+  let g:ackprg = 'rg --vimgrep'
+elseif executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ackprg = 'ag --vimgrep'
