@@ -6,7 +6,7 @@ endif
 call plug#begin('~/.vim/plugged')
 "Plug 'slim-template/vim-slim'
 "Plug 'ntpeters/vim-better-whitespace' " slows down
-Plug 'junegunn/fzf', { 'dir': '~/dotfiles/fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
