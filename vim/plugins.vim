@@ -36,6 +36,7 @@ Plug 'mattn/emmet-vim'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'tpope/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
+Plug 'hashivim/vim-terraform'
 
 if has('nvim')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
