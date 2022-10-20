@@ -93,6 +93,7 @@ colorscheme seoul256
 set background=dark
 
 "let g:fzf_launcher = 'xterm -e sh -ic %s'
+let g:fzf_layout = { 'down': '~40%' }
 let g:fzf_colors = { 'bg':      ['bg', 'Normal'], 'prompt':      ['fg', 'Conditional']}
 
 if executable('rg')
