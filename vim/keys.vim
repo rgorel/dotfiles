@@ -22,12 +22,11 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-map <Leader>b :Tagbar<CR>
-
 " FZF
 map <C-P> :FZF<CR>
 map <Leader>\ :Buffers<CR>
 map <Leader><space> :Buffers<CR>
+map <C-K> :Buffers<CR>
 map <C-C> :Commands<CR>
 map <C-\> :History<CR>
 map <Leader>t :Tags<CR>
