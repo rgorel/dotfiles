@@ -4,3 +4,7 @@
 [submodule "oh-my-zsh/custom/pure"]
 	path = oh-my-zsh/custom/pure
 	url = git@github.com:rgorel/pure.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty

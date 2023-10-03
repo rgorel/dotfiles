@@ -1,39 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-bk_dir=$dir.bk$(date +%Y%m%d-%H%M%S)
+set -e
 
-mkdir -p $bk_dir
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="dotbot"
 
-function backup {
-  if [ -e ~/.$1 ]
-  then
-    echo "backing up .$1"
-    mkdir -p $bk_dir/$(dirname $1)
-    mv ~/.$1 $bk_dir/$(dirname $1)
-  fi
-}
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-backup vim
-echo 'installing vim config'
-ln -s $dir/vim ~/.vim
-backup config/nvim
-echo 'linking neovim config'
-ln -s $dir/vim ~/.config/nvim
-echo 'linking zsh theme'
-ln -fs $dir/oh-my-zsh/custom/themes/* ~/.oh-my-zsh/custom/themes
-backup tmux.conf
-echo 'linking tmux config'
-ln -fs $dir/tmux.conf ~/.tmux.conf
-echo 'linking agignore'
-ln -fs $dir/agignore ~/.agignore
+cd "${BASEDIR}"
+git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_DIR}"
 
-backup zshrc
-echo 'linking zshrc'
-ln -fs $dir/zshrc ~/.zshrc
-backup oh-my-zsh/custom/pure
-echo 'linking zsh customized pure theme'
-ln -fs $dir/oh-my-zsh/custom/pure ~/.oh-my-zsh/custom/pure
-mkdir -p ~/.oh-my-zsh/functions
-ln -fs $dir/oh-my-zsh/custom/pure/pure.zsh ~/.oh-my-zsh/functions/prompt_pure_setup
-ln -fs $dir/oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/functions/async
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
