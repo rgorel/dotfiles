@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- [[ Configure Neotree ]]
 vim.keymap.set('n', '<leader>f',':Neotree<cr>')
+vim.keymap.set('n', '<leader>ff',':Neotree<cr>')
 vim.keymap.set('n', '<leader>fg',':Neotree reveal=true<cr>')
 
 
@@ -47,7 +48,14 @@ require('telescope').setup {
 
 -- See `:help telescope.builtin`
 
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+vim.keymap.set(
+  'n', '<leader><space>',
+  function ()
+    require('telescope.builtin').buffers{sort_mru = true, sort_lastused = true}
+  end,
+  { desc = '[ ] Find existing buffers' }
+)
+
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
