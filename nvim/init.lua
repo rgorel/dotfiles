@@ -23,6 +23,8 @@ require("config.plugins")
 
 require("config.settings")
 
+require("config.commands")
+
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
 

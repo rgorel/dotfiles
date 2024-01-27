@@ -25,6 +25,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
+-- [[ Copy file name]]
+
+vim.keymap.set('n', '<leader>c', ':CopyFileName<cr>')
+vim.keymap.set('n', '<leader>C', ':CopyFullFileName<cr>')
+
 -- [[ Configure Neotree ]]
 vim.keymap.set('n', '<leader>f',':Neotree<cr>')
 vim.keymap.set('n', '<leader>ff',':Neotree<cr>')
