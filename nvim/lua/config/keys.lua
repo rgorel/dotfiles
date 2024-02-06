@@ -31,9 +31,10 @@ vim.keymap.set('n', '<leader>c', ':CopyFileName<cr>')
 vim.keymap.set('n', '<leader>C', ':CopyFullFileName<cr>')
 
 -- [[ Configure Neotree ]]
-vim.keymap.set('n', '<leader>f',':Neotree<cr>')
-vim.keymap.set('n', '<leader>ff',':Neotree<cr>')
-vim.keymap.set('n', '<leader>fg',':Neotree reveal=true<cr>')
+vim.keymap.set('n', '<leader>f',':NvimTreeFocus<cr>')
+vim.keymap.set('n', '<leader>ff',':NvimTreeFocus<cr>')
+vim.keymap.set('n', '<leader>fd',':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>fg',':NvimTreeFindFile<cr>')
 
 
 -- [[ Configure Telescope ]]

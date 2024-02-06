@@ -162,15 +162,17 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
-{
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+  {
+    'nvim-tree/nvim-tree.lua',
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-    }
-},
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function ()
+      vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
+      require('nvim-tree').setup()
+    end
+  },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
