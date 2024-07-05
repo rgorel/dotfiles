@@ -49,3 +49,5 @@ vim.o.relativenumber = true
 vim.o.list = true
 vim.o.listchars = 'tab:» ,eol:¬,trail:⋅,extends:❯,precedes:❮'
 
+vim.o.smartindent = true
+vim.o.autoindent = true

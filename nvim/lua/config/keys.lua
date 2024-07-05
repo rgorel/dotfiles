@@ -57,7 +57,7 @@ require('telescope').setup {
 vim.keymap.set(
   'n', '<leader><space>',
   function ()
-    require('telescope.builtin').buffers{sort_mru = true, sort_lastused = true}
+    require('telescope.builtin').buffers{sort_mru = true, ignore_current_buffer = true }
   end,
   { desc = '[ ] Find existing buffers' }
 )
@@ -94,7 +94,7 @@ vim.defer_fn(function()
     auto_install = false,
   
     highlight = { enable = true },
-    indent = { enable = true },
+    indent = { enable = false },
     incremental_selection = {
       enable = true,
       keymaps = {
