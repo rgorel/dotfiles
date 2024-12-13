@@ -81,9 +81,9 @@ require('lazy').setup({
   {
     'junegunn/seoul256.vim',
     config = function()
-      vim.cmd.colorscheme 'seoul256'
       vim.g.seoul256_background = 235
       vim.cmd.set 'background=dark'
+      vim.cmd.colorscheme 'seoul256'
     end
 
   },
