@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file=$(mktemp)
+tmux capture-pane -pS - > $file
+vim=$(command -v nvim >/dev/null 2>&1 && echo nvim || echo vim)
+tmux new-window -n tmux-output "$vim '+ normal G $' $file"

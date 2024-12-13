@@ -11,6 +11,9 @@
     ~/.ignore: ignore
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
     ~/.zshrc: zshrc
+    ~/bin/:
+      glob: true
+      path: bin/*
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
