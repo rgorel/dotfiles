@@ -1,0 +1,10 @@
+[core]
+	excludesfile = ~/dotfiles/gitignore_global
+[user]
+	email = romangorel@gmail.com
+	name = Roman Gorel
+[push]
+	default = current
+[alias]
+	ff = pull --ff-only
+	pr = pull --rebase
