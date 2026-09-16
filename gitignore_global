@@ -4,3 +4,4 @@
 .env.local
 project/metals.sbt
 _notes/
+.continue
