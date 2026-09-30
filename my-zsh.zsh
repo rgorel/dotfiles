@@ -3,14 +3,14 @@ export EDITOR=vim
 #source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ~/.oh-my-zsh/custom/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys
-zmodload zsh/terminfo
+#zmodload zsh/terminfo
 #bindkey "$terminfo[kcuu1]" history-substring-search-up
 #bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # bind UP and DOWN arrow keys (compatibility fallback
 # for Ubuntu 12.04, Fedora 21, and MacOSX 10.9 users)
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+#bindkey '^[[A' history-substring-search-up
+#bindkey '^[[B' history-substring-search-down
 
 [ "$PATH_LOADED" != 1 ] && export PATH="$HOME/bin:$HOME/dotfiles/bin:$PATH"
 

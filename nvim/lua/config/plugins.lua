@@ -4,6 +4,12 @@ require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  {
+      'shumphrey/fugitive-gitlab.vim',
+      config = function ()
+        vim.g.fugitive_gitlab_domains = {'https://git.flix.tech/'}
+      end
+  },
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',

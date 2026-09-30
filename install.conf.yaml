@@ -10,7 +10,8 @@
     ~/.config/nvim: nvim
     ~/.ignore: ignore
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
-    ~/.zshrc: zshrc
+    # ~/.zshrc: zshrc
+    ~/.zshrc: zshrcv2.zsh
     ~/bin/:
       glob: true
       path: bin/*
