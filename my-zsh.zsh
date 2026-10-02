@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=nvim
 
 #source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ~/.oh-my-zsh/custom/zsh-history-substring-search/zsh-history-substring-search.zsh

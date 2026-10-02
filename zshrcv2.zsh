@@ -28,4 +28,3 @@ source $ZSH_CONFIG_DIR/p10k.zsh
 
 # --- Personal config ---------------------------------------------------------
 source $HOME/dotfiles/my-zsh.zsh
-[[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
